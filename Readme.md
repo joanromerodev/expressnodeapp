@@ -1,4 +1,4 @@
-# Express - Node JS App
+# Express - Node JS App 👨🏻‍💻 
 
 This app offers you a quick understanding of the use of express in a node app. It's basically designed to test functionalities such routes, rendering views, using view engines, express-sessions and Filesystem.
 
