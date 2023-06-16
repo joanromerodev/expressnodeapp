@@ -1,0 +1,18 @@
+extends ./layout/index
+block content
+    .container.d-flex.justify-content-center.align-items-center.my-5.custom-h
+        .card.shadow.w-50#loginCard 
+            .card-header.text-center 
+                p.py-4.text-primary-emphasis.fs-4.fw-semibold #{title} for #{siteName} app
+            .card-body.text-center
+                form.px-5.py-4(action="/auth" method="POST")
+                    .mb-4
+                        label.form-label(for='usernameField') Username
+                        input#usernameField.form-control.text-center(type='text', name="username")
+                    .mb-4
+                        label.form-label(for='passwordField') Password
+                        input#passwordField.form-control.text-center(type='password', name="password")
+                    button.btn.btn-primary(type='submit') Sign in
+            if(signingError)
+                .card-footer.text-center.px-5
+                        .alert.alert-danger.mt-3=signingError

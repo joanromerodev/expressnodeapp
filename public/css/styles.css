@@ -1,0 +1,63 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}
+
+.custom-h {
+  min-height: 70vh;
+}
+.navbar-nav {
+  flex-direction: row !important;
+}
+
+.copyBtn {
+  cursor: pointer;
+}
+
+#alertDiv {
+  visibility: hidden;
+}
+
+.copiedAlert {
+  visibility: visible !important;
+}
+
+.iconSpan {
+  background-color: #e1effe !important;
+}
+
+.customInput {
+  background-color: #fff !important;
+}
+
+.navbarCustom .nav-item .nav-link:hover {
+  background-color: white;
+  color: #333 !important;
+}
+
+.navbarCustom .nav-item .nav-link:hover .icon-tabler {
+  stroke: #333;
+}
+@media (max-width: 768px) {
+  .custom-h {
+    min-height: 60vh;
+  }
+  #loginCard {
+    width: 90% !important;
+    font-size: 14px;
+  }
+  #loginCard .card-header p {
+    font-size: 18px !important;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,60 @@
+extends ./layout/index
+block content
+    .container.d-flex.justify-content-center.align-items-center.flex-column.my-5.custom-h
+        .card.text-center.w-50#loginCard 
+            .card-header
+                span.fw-semibold User Information
+            .card-body
+                .input-group.mb-3.shadow.rounded.my-4
+                    span.input-group-text.iconSpan 
+                        svg.icon.icon-tabler.icon-tabler-user(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 24 24' stroke-width='1.5' stroke='#3f83f8' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0')
+                            path(d='M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2')
+                    input#name.form-control.text-center.fw-semibold.customInput(type='text' value=user.name disabled) 
+                    span.input-group-text
+                        svg#name.icon.icon-tabler.icon-tabler-clipboard-list.copyBtn(xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewbox='0 0 24 24' stroke-width='2' stroke='#616E72' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2')
+                            path(d='M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z')
+                            path(d='M9 12l.01 0')
+                            path(d='M13 12l2 0')
+                            path(d='M9 16l.01 0')
+                            path(d='M13 16l2 0')
+                .input-group.mb-3.shadow.rounded.my-4
+                    span.input-group-text.iconSpan 
+                        svg.icon.icon-tabler.icon-tabler-mail(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 24 24' stroke-width='1.5' stroke='#3f83f8' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z')
+                            path(d='M3 7l9 6l9 -6')
+                    input#email.form-control.text-center.fw-semibold.customInput(type='text' value=user.email disabled)
+                    span.input-group-text
+                         svg#email.icon.icon-tabler.icon-tabler-clipboard-list.copyBtn(xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewbox='0 0 24 24' stroke-width='2' stroke='#616E72' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2')
+                            path(d='M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z')
+                            path(d='M9 12l.01 0')
+                            path(d='M13 12l2 0')
+                            path(d='M9 16l.01 0')
+                            path(d='M13 16l2 0')
+                .input-group.mb-3.shadow.rounded.my-4
+                    span.input-group-text.iconSpan 
+                        svg.icon.icon-tabler.icon-tabler-phone(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 24 24' stroke-width='1.5' stroke='#3f83f8' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2')
+                    input#phone.form-control.text-center.fw-semibold.customInput(type='text' value=user.phone disabled)
+                    span.input-group-text
+                         svg#phone.icon.icon-tabler.icon-tabler-clipboard-list.copyBtn(xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewbox='0 0 24 24' stroke-width='2' stroke='#616E72' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                            path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                            path(d='M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2')
+                            path(d='M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z')
+                            path(d='M9 12l.01 0')
+                            path(d='M13 12l2 0')
+                            path(d='M9 16l.01 0')
+                            path(d='M13 16l2 0')
+            if(modified)
+                .card-footer.text-body-secondary
+                    span Last update #{modified}
+        #alertDiv.alert.alert-success.w-25.text-center.mt-4.fw-semibold
+            | Copied &check;
+        

@@ -1,0 +1,18 @@
+nav.navbar.bg-dark.border-bottom.border-bottom-dark(data-bs-theme='dark')
+  .container-fluid.my-1
+    a.navbar-brand(href='/').d-flex.align-items-center
+      img.d-inline-block.align-text-top(src='https://cdn-icons-png.flaticon.com/512/423/423786.png' alt='Logo' width='30' height='30')
+      span.px-4 #{siteName}
+    if(isAuthenticated)     
+      ul.navbar-nav.align-items-center.navbarCustom
+        li.nav-item.text-end.mt-2
+          a.nav-link.p-3.fw-semibold.text-white.rounded-pill(href='/') Dashboard
+        li.nav-item.text-end.mt-2
+          a.nav-link.p-3.fw-semibold.text-white.rounded-pill(href='/settings') Settings
+        li.nav-item.text-end.mt-2
+          form(action="/logout" method="POST")
+            button.nav-link.p-3.fw-semibold.text-white.rounded-pill(type="submit")
+              svg.icon.icon-tabler.icon-tabler-power(xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewbox='0 0 24 24' stroke-width='1.5' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                path(d='M7 6a7.75 7.75 0 1 0 10 0')
+                path(d='M12 4l0 8')
